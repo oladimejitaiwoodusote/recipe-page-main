@@ -1,0 +1,77 @@
+@font-face {
+    font-family: outfit;
+    src: url('assets/fonts/outfit/static/Outfit-Regular.ttf') format("ttf");
+}
+@font-face {
+    font-family: youngerserif;
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+body{
+    font-family: youngserif;
+}
+
+h1, h2 {
+    font-family: youngserif;
+    color: hsl(14, 45%, 36%);
+}
+
+p, li{
+    line-height: 1.6;
+    color: hsl(30, 10%, 34%);
+}
+
+li {
+    margin-top: 0.5rem;
+}
+
+.outer-container div:not(first-child){
+    padding: 1.5rem;
+}
+
+.first-section h1{
+    margin-bottom: 1rem;
+}
+
+.first-section article {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.first-section article h3 {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 0.5rem;
+}
+
+.third-section {
+    border-top:1px solid hsl(30, 18%, 87%);
+    border-bottom:1px solid hsl(30, 18%, 87%);
+}
+
+.fourth-section {
+    
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
