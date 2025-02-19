@@ -1,10 +1,24 @@
 @font-face {
     font-family: outfit;
-    src: url('assets/fonts/outfit/static/Outfit-Regular.ttf') format("ttf");
+    src: url('../../assets/fonts/outfit/static/Outfit-Regular.ttf');
+    font-weight: 400;
 }
+
 @font-face {
-    font-family: youngerserif;
-    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format("ttf");
+    font-family: outfit;
+    src: url('../../assets/fonts/outfit/static/Outfit-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url('../../assets/fonts/outfit/static/Outfit-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: youngserif;
+    src: url('../../assets/fonts/young-serif/YoungSerif-Regular.ttf') ;
 }
 
 * {
@@ -14,12 +28,16 @@
     font-family: outfit;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul, ol {
     padding-left: 20px;
 }
 
 body{
-    font-family: youngserif;
+    background-color: hsl(30, 54%, 90%);
 }
 
 h1, h2 {
@@ -36,12 +54,23 @@ li {
     margin-top: 0.5rem;
 }
 
+.outer-container {
+    max-width: 800px;
+    margin-inline: auto;
+    background-color: #fff;
+}
+
 .outer-container div:not(first-child){
     padding: 1.5rem;
 }
 
 .first-section h1{
     margin-bottom: 1rem;
+    color: black;
+}
+
+.first-section li::marker {
+    color: hsl(332, 51%, 32%)
 }
 
 .first-section article {
@@ -61,9 +90,36 @@ li {
     border-bottom:1px solid hsl(30, 18%, 87%);
 }
 
-.fourth-section {
-    
+.second-section li::marker, .third-section li::marker{
+    color: hsl(14, 45%, 36%)
 }
+
+.fourth-section p{
+    margin-top: 1rem;
+}
+
+.fourth-section ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid hsl(30, 18%, 78%);
+    padding: 0.5rem 0;
+}
+
+.fourth-section ul li:last-child{
+    border-bottom: none;
+}
+
+strong{
+    font-weight: 700;
+}
+
+span{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+
+}
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -72,6 +128,22 @@ li {
     color: hsl(228, 45%, 44%); 
 }
 
+@media (min-width: 768px){
+    .outer-container {
+        border-radius: 1rem;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin: 5rem auto 0;
+    }
+    
+    .first-section h1 {
+        font-size: 45px;
+    }
+    
+    img {
+        border-radius: 1rem;
+    }
+}
 
 
 
